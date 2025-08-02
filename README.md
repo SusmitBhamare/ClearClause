@@ -206,7 +206,7 @@
 GOOGLE_GENAI_API_KEY=your_gemini_api_key
 
 # Database
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/clearclause
+MONGODB_URI=your_mongodb_connection_string
 
 # Redis
 UPSTASH_REDIS_URL=your_redis_url
