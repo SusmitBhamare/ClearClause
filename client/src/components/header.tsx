@@ -7,9 +7,6 @@ import { UserButton } from './shared/user-button';
 import { useState } from 'react';
 
 const navItems = [
-  { name: 'Dashboard', href: '/dashboard' },
-  { name: 'Pricing', href: '/pricing' },
-  { name: 'Privacy Policy', href: '/privacy' },
 ];
 
 export function Header() {
