@@ -14,7 +14,6 @@ import redis from './controllers/redis';
 import authRoute from './routes/auth';
 import contractRoute from './routes/contracts';
 import paymentRoute from './routes/payment';
-import settingsRoute from './routes/settings';
 import { handleWebhook } from './controllers/payment-controller';
 
 const app = express();
@@ -81,7 +80,6 @@ app.use(passport.session());
 app.use('/auth', authRoute);
 app.use('/contracts', contractRoute);
 app.use('/payments', paymentRoute);
-app.use('/settings', settingsRoute);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
