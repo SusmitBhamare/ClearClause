@@ -14,8 +14,6 @@ import {
   Database,
   Layers,
   Server,
-  BookOpen,
-  UserCircle,
 } from 'lucide-react';
 
 export default function About() {
@@ -58,13 +56,92 @@ export default function About() {
                 practitioners to enterprise legal departments.
               </p>
             </div>
-            <div className='bg-white p-6 rounded-xl shadow-lg border border-slate-100'>
-              <div className='aspect-video bg-slate-100 rounded-lg flex items-center justify-center'>
-                <div className='text-4xl font-bold text-slate-400'>
-                  Platform Preview
-                </div>
-              </div>
-            </div>
+                         <div className='bg-white p-6 rounded-xl shadow-lg border border-slate-100'>
+               <div className='aspect-video bg-gradient-to-br from-slate-50 to-white rounded-lg p-4 border border-slate-200 relative overflow-hidden'>
+                 {/* Mockup Frame */}
+                 <div className='absolute top-0 left-0 right-0 h-6 bg-gradient-to-r from-slate-300 to-slate-400 flex items-center justify-center'>
+                   <div className='flex items-center gap-2'>
+                     <div className='w-3 h-3 bg-red-500 rounded-full'></div>
+                     <div className='w-3 h-3 bg-yellow-500 rounded-full'></div>
+                     <div className='w-3 h-3 bg-green-500 rounded-full'></div>
+                   </div>
+                 </div>
+                 
+                 {/* Content Area */}
+                 <div className='mt-8'>
+                   {/* Header Bar */}
+                   <div className='h-8 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-t-lg flex items-center justify-between px-4 mb-4'>
+                     <div className='flex items-center gap-2'>
+                       <div className='w-4 h-4 bg-white rounded-sm'></div>
+                       <span className='text-white text-xs font-medium'>ClearClause AI Dashboard</span>
+                     </div>
+                     <div className='flex items-center gap-1'>
+                       <div className='w-2 h-2 bg-green-400 rounded-full'></div>
+                       <span className='text-white text-xs'>Live</span>
+                     </div>
+                   </div>
+                   
+                   {/* Main Content */}
+                   <div className='grid grid-cols-3 gap-3'>
+                     {/* Left Panel - Upload */}
+                     <div className='bg-white border border-slate-200 rounded-lg p-3'>
+                       <div className='text-center'>
+                         <div className='w-12 h-12 bg-gradient-to-r from-indigo-100 to-blue-100 rounded-lg flex items-center justify-center mx-auto mb-2'>
+                           <span className='text-indigo-600 text-lg'>📄</span>
+                         </div>
+                         <p className='text-xs text-slate-700 font-medium'>Upload Contract</p>
+                         <p className='text-xs text-slate-500 mt-1'>Drag & Drop</p>
+                       </div>
+                     </div>
+                     
+                     {/* Center Panel - Analysis */}
+                     <div className='bg-white border border-slate-200 rounded-lg p-3'>
+                       <div className='space-y-2'>
+                         <div className='flex items-center justify-between'>
+                           <span className='text-xs text-slate-600'>Type</span>
+                           <span className='text-xs bg-green-100 text-green-700 px-1 rounded'>Employment</span>
+                         </div>
+                         <div className='flex items-center justify-between'>
+                           <span className='text-xs text-slate-600'>Risk</span>
+                           <span className='text-xs bg-yellow-100 text-yellow-700 px-1 rounded'>Medium</span>
+                         </div>
+                         <div className='flex items-center justify-between'>
+                           <span className='text-xs text-slate-600'>Clauses</span>
+                           <span className='text-xs bg-blue-100 text-blue-700 px-1 rounded'>12</span>
+                         </div>
+                       </div>
+                     </div>
+                     
+                     {/* Right Panel - Chart */}
+                     <div className='bg-white border border-slate-200 rounded-lg p-3'>
+                       <div className='text-center'>
+                         <div className='w-12 h-8 bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg flex items-center justify-center mx-auto mb-2'>
+                           <div className='flex items-end gap-1'>
+                             <div className='w-1 h-3 bg-purple-400 rounded-sm'></div>
+                             <div className='w-1 h-5 bg-purple-500 rounded-sm'></div>
+                             <div className='w-1 h-2 bg-purple-400 rounded-sm'></div>
+                             <div className='w-1 h-4 bg-purple-500 rounded-sm'></div>
+                           </div>
+                         </div>
+                         <p className='text-xs text-slate-700 font-medium'>Confidence</p>
+                         <p className='text-xs text-slate-500'>94%</p>
+                       </div>
+                     </div>
+                   </div>
+                   
+                   {/* Bottom Bar */}
+                   <div className='mt-4 bg-gradient-to-r from-slate-100 to-slate-200 rounded-lg p-2'>
+                     <div className='flex items-center justify-between'>
+                       <span className='text-xs text-slate-600'>Analysis Complete</span>
+                       <div className='w-16 h-2 bg-gradient-to-r from-green-400 to-green-500 rounded-full'></div>
+                     </div>
+                   </div>
+                 </div>
+                 
+                 {/* Mockup Shadow */}
+                 <div className='absolute -bottom-2 left-2 right-2 h-2 bg-black opacity-10 rounded-full blur-sm'></div>
+               </div>
+             </div>
           </div>
         </div>
       </div>
@@ -285,148 +362,9 @@ export default function About() {
         </div>
       </div>
 
-      {/* Developer Profile */}
-      <div className='w-full py-16 bg-gradient-to-r from-slate-900 to-indigo-900 text-white'>
-        <div className='max-w-5xl mx-auto px-4'>
-          <h2 className='text-4xl font-bold mb-16 text-center'>
-            Meet the Developer
-          </h2>
 
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-12 items-center'>
-            <div className='flex flex-col items-center'>
-              <div className='w-48 h-48 bg-indigo-200 rounded-full flex items-center justify-center mb-6 border-4 border-white'>
-                <UserCircle className='w-32 h-32 text-indigo-700' />
-              </div>
 
-              <div className='flex gap-4 mt-4'>
-                <a
-                  href='https://github.com/SusmitBhamare'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='bg-white text-indigo-900 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors'
-                >
-                  <Github className='w-5 h-5' />
-                </a>
-                <a
-                  href='https://linkedin.com/in/susmitbhamare'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='bg-white text-indigo-900 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors'
-                >
-                  <Linkedin className='w-5 h-5' />
-                </a>
-                <a
-                  href='mailto:susmit.bhamare@example.com'
-                  className='bg-white text-indigo-900 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors'
-                >
-                  <Mail className='w-5 h-5' />
-                </a>
-              </div>
-            </div>
 
-            <div className='md:col-span-2'>
-              <h3 className='text-3xl font-bold mb-4'>Susmit Bhamare</h3>
-              <p className='text-xl text-indigo-100 mb-6'>
-                Full Stack Developer & AI Enthusiast
-              </p>
-
-              <p className='text-lg text-indigo-100 mb-4'>
-                Hi there! I'm Susmit, a passionate developer with expertise in
-                building AI-powered web applications. With over 5 years of
-                experience in full-stack development, I specialize in creating
-                intuitive, efficient, and scalable solutions that solve
-                real-world problems.
-              </p>
-
-              <p className='text-lg text-indigo-100 mb-4'>
-                ClearClause AI represents my vision to transform the legal tech
-                industry by making contract analysis more accessible and
-                efficient through cutting-edge AI technology.
-              </p>
-
-              <div className='mt-8 grid grid-cols-2 gap-4'>
-                <div className='bg-indigo-800 bg-opacity-50 p-4 rounded-lg'>
-                  <h4 className='font-semibold mb-2'>Education</h4>
-                  <p>Master of Science in Computer Science</p>
-                  <p className='text-indigo-200'>Northeastern University</p>
-                </div>
-                <div className='bg-indigo-800 bg-opacity-50 p-4 rounded-lg'>
-                  <h4 className='font-semibold mb-2'>Experience</h4>
-                  <p>HDFC Bank</p>
-                  <p className='text-indigo-200'>Ex- SDE</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Documentation */}
-      <div className='w-full py-16'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <h2 className='text-4xl font-bold text-slate-800 mb-12 text-center'>
-            Documentation
-          </h2>
-
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-            <div className='bg-white p-8 rounded-xl border border-slate-100 shadow-lg'>
-              <div className='w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6'>
-                <BookOpen className='w-8 h-8 text-white' />
-              </div>
-              <h3 className='text-2xl font-semibold mb-4 text-slate-800 text-center'>
-                User Guide
-              </h3>
-              <p className='text-slate-600 mb-6 text-center'>
-                Comprehensive documentation on how to use all features of the
-                ClearClause AI platform.
-              </p>
-              <div className='text-center'>
-                <Button className='bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-6 py-3 rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300'>
-                  View User Guide
-                </Button>
-              </div>
-            </div>
-
-            <div className='bg-white p-8 rounded-xl border border-slate-100 shadow-lg'>
-              <div className='w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6'>
-                <Code className='w-8 h-8 text-white' />
-              </div>
-              <h3 className='text-2xl font-semibold mb-4 text-slate-800 text-center'>
-                API Documentation
-              </h3>
-              <p className='text-slate-600 mb-6 text-center'>
-                Technical documentation for developers looking to integrate with
-                our API.
-              </p>
-              <div className='text-center'>
-                <Button className='bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 text-white px-6 py-3 rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300'>
-                  View API Docs
-                </Button>
-              </div>
-            </div>
-          </div>
-
-          <div className='mt-12 text-center'>
-            <p className='text-slate-600 mb-4'>
-              For any technical issues or feature requests, please visit our
-              GitHub repository.
-            </p>
-            <a
-              href='https://github.com/SusmitBhamare/ClearClause'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <Button
-                variant='outline'
-                className='border-2 border-slate-200 bg-white text-slate-700 px-6 py-3 rounded-xl font-medium flex items-center hover:border-slate-300 hover:bg-slate-50 transition-all duration-300'
-              >
-                <Github className='mr-2 w-5 h-5' />
-                GitHub Repository
-              </Button>
-            </a>
-          </div>
-        </div>
-      </div>
 
       {/* Footer */}
       <div className='w-full bg-slate-900 py-12 text-slate-400'>
