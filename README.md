@@ -8,7 +8,6 @@
 [![Node.js](https://img.shields.io/badge/Node.js-Express-green?style=for-the-badge&logo=node.js)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 ---
 
@@ -17,14 +16,11 @@
 - [✨ Features](#-features)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [🚀 Getting Started](#-getting-started)
-- [📦 Installation](#-installation)
-- [⚙️ Configuration](#️-configuration)
 - [🎯 Usage](#-usage)
 - [🔧 API Endpoints](#-api-endpoints)
 - [📁 Project Structure](#-project-structure)
 - [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [👨‍💻 Author](#-author)
+
 
 ---
 
@@ -149,94 +145,6 @@
 
 ---
 
-## 📦 Installation
-
-### Detailed Setup Instructions
-
-#### 1. **Database Setup**
-```bash
-# MongoDB Atlas (Recommended)
-# 1. Create a free cluster at https://cloud.mongodb.com
-# 2. Get your connection string
-# 3. Add to server/.env
-
-# Local MongoDB (Alternative)
-# 1. Install MongoDB locally
-# 2. Start MongoDB service
-# 3. Use connection string: mongodb://localhost:27017/clearclause
-```
-
-#### 2. **Redis Setup**
-```bash
-# Upstash Redis (Recommended)
-# 1. Create account at https://upstash.com
-# 2. Create Redis database
-# 3. Get URL and token
-# 4. Add to server/.env
-
-# Local Redis (Alternative)
-# 1. Install Redis locally
-# 2. Start Redis service
-# 3. Use connection string: redis://localhost:6379
-```
-
-#### 3. **Google Gemini API**
-```bash
-# 1. Go to https://makersuite.google.com/app/apikey
-# 2. Create API key
-# 3. Add to server/.env as GOOGLE_GENAI_API_KEY
-```
-
-#### 4. **Stripe Setup** (Optional)
-```bash
-# 1. Create account at https://stripe.com
-# 2. Get publishable and secret keys
-# 3. Add to environment variables
-```
-
----
-
-## ⚙️ Configuration
-
-### Environment Variables
-
-#### **Server (.env)**
-```env
-# AI Configuration
-GOOGLE_GENAI_API_KEY=your_gemini_api_key
-
-# Database
-MONGODB_URI=your_mongodb_connection_string
-
-# Redis
-UPSTASH_REDIS_URL=your_redis_url
-UPSTASH_REDIS_TOKEN=your_redis_token
-
-# Server
-PORT=8080
-CLIENT_URL=http://localhost:3000
-
-# Authentication
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-SESSION_SECRET=your_session_secret
-
-# Payments (Optional)
-STRIPE_SECRET_KEY=your_stripe_secret_key
-STRIPE_WEBHOOK_SECRET=your_webhook_secret
-
-# Email (Optional)
-RESEND_API_KEY=your_resend_api_key
-```
-
-#### **Client (.env.local)**
-```env
-NEXT_PUBLIC_API_URL=http://localhost:8080
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
-```
-
----
-
 ## 🎯 Usage
 
 ### **1. Upload Contract**
@@ -314,62 +222,6 @@ ClearClause/
 │   └── package.json
 └── README.md
 ```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Commit your changes**
-   ```bash
-   git commit -m 'Add amazing feature'
-   ```
-4. **Push to the branch**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. **Open a Pull Request**
-
-### **Development Guidelines**
-- Follow TypeScript best practices
-- Write meaningful commit messages
-- Add tests for new features
-- Update documentation as needed
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-**Susmit Bhamare**
-
-- **GitHub**: [@SusmitBhamare](https://github.com/SusmitBhamare)
-- **LinkedIn**: [susmitbhamare](https://linkedin.com/in/susmitbhamare)
-- **Email**: susmit.bhamare@example.com
-
-### **About the Developer**
-Full Stack Developer & AI Enthusiast with expertise in building AI-powered web applications. ClearClause AI represents the vision to transform the legal tech industry by making contract analysis more accessible and efficient through cutting-edge AI technology.
-
----
-
-## 🙏 Acknowledgments
-
-- **Google Gemini API** for advanced AI capabilities
-- **Next.js Team** for the amazing React framework
-- **MongoDB Atlas** for reliable cloud database
-- **Upstash** for Redis-as-a-Service
-- **Stripe** for secure payment processing
 
 ---
 
